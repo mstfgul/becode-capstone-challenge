@@ -7,11 +7,11 @@ from scrapping_final import main
 
 
 
-classifier = joblib.load('/Users/mustafagul/Desktop/GitHub/becode-capstone-challenge/scraping/models/classifier_model.joblib')
-label_encoder = joblib.load('/Users/mustafagul/Desktop/GitHub/becode-capstone-challenge/scraping/models/label_encoder.joblib')
+classifier = joblib.load('/scraping/models/classifier_model.joblib')
+label_encoder = joblib.load('/scraping/models/label_encoder.joblib')
 model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
-with open('/Users/mustafagul/Desktop/GitHub/becode-capstone-challenge/scraping/articles_info.json', 'r') as f:
+with open('/scraping/articles_info.json', 'r') as f:
     articles = json.load(f)
 
 #predict

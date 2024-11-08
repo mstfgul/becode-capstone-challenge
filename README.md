@@ -45,7 +45,6 @@ This project is a Streamlit application that allows you to predict the theme of 
 - `scraping/models/`: Directory containing the classifier model and label encoder.
 - `scraping/articles_info.json`: JSON file containing article information.
 - `scrapping_final.py`: Script for updating data.
-- `scrapp.py`: Script for scraping data.
 
 ## Contributing
 

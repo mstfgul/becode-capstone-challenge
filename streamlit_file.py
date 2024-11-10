@@ -7,8 +7,8 @@ from scrapping_final import main
 
 
 
-classifier = joblib.load('/scraping/models/classifier_model.joblib')
-label_encoder = joblib.load('/scraping/models/label_encoder.joblib')
+classifier = joblib.load('/models/classifier_model.joblib')
+label_encoder = joblib.load('/models/label_encoder.joblib')
 model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
 with open('/scraping/articles_info.json', 'r') as f:

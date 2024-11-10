@@ -11,7 +11,7 @@ classifier = joblib.load('/models/classifier_model.joblib')
 label_encoder = joblib.load('/models/label_encoder.joblib')
 model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
-with open('/scraping/articles_info.json', 'r') as f:
+with open('/articles_info.json', 'r') as f:
     articles = json.load(f)
 
 #predict
